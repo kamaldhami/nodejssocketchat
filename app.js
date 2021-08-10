@@ -187,10 +187,9 @@ io.on('connection', async (socket) => {
 
 })
 
-app.post('/',function(req,res) {
-    res.send({'hello chat'})
-})
-
+app.get("/", (req, res) => {
+    res.status(200).json({ message: "Welcome" });
+});
 
 app.post('/message', function (req, res) {
 
