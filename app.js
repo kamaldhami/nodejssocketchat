@@ -187,6 +187,9 @@ io.on('connection', async (socket) => {
 
 })
 
+app.post('/',function(req,res) {
+    res.send({'hello chat'})
+})
 
 
 app.post('/message', function (req, res) {
